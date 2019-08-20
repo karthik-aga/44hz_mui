@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import IntegrationDownshift from './components/Search';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';  
 
 const theme = createMuiTheme({
@@ -25,6 +26,7 @@ function App() {
   return (
     <MuiThemeProvider theme = { theme }>
       <Navbar />
+      <IntegrationDownshift />
    </MuiThemeProvider>
   );
 }
